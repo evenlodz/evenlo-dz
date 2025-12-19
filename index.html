@@ -1,24 +1,43 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EVENLO DZ - اكتشف أفضل الفعاليات في الجزائر</title>
-    <meta name="description" content="منصة EVENLO DZ تجمع جميع الأحداث والفعاليات الصناعية والرياضية والثقافية والتعليمية والخيرية في الجزائر. اكتشف الفعاليات القريبة منك واحصل على إشعارات ذكية." />
-    <meta name="keywords" content="فعاليات الجزائر، أحداث، معارض، مؤتمرات، رياضة، ثقافة، تعليم، خيرية" />
-    <link rel="canonical" href="https://fa3aliyati.dz" />
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="EVENLO DZ - اكتشف أفضل الفعاليات في الجزائر" />
-    <meta property="og:description" content="منصة EVENLO DZ تجمع جميع الفعاليات في الجزائر مع إشعارات ذكية حسب اهتماماتك" />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ar_DZ" />
-    
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EVENLO DZ - اكتشف فعاليتك القادمة</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+<body>
 
+<header class="hero">
+  <div class="header-content">
+    <h1>EVENLO DZ</h1>
+    <p>كل الفعاليات في مكان واحد — ثقافية، رياضية، تعليمية، خيرية…</p>
+    <button onclick="goToSection('events')">استكشف الفعاليات</button>
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#events">الفعاليات</a></li>
+    <li><a href="#about">حول المنصة</a></li>
+    <li><a href="#organizers">منظّم</a></li>
+  </ul>
+</nav>
+
+<section id="events" class="section">
+  <h2>الفعاليات الحالية</h2>
+  <div class="events-list" id="eventCards"></div>
+</section>
+
+<section id="organizers" class="section">
+  <h2>لوحة المنظمين</h2>
+  <button onclick="location.href='organizer/login.html'">دخول المنظم</button>
+</section>
+
+<footer>
+  <p>© 2025 EVENLO DZ - جميع الحقوق محفوظة</p>
+</footer>
+
+</body>
+</html>
